@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sneaker_shop/components/bottom_navbar.dart';
+import 'package:sneaker_shop/components/drawer.dart';
 import 'package:sneaker_shop/pages/cart_page.dart';
 import 'package:sneaker_shop/pages/shop_page.dart';
 
@@ -27,6 +28,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
+      drawer: const MyDrawer(),
       backgroundColor: Colors.grey[300],
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavBar(

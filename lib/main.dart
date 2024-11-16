@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sneaker_shop/pages/about_page.dart';
 import 'package:sneaker_shop/pages/intro_page.dart';
+import 'package:sneaker_shop/pages/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +12,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sneaker Shop',
-      home: IntroPage(),
+      home: const IntroPage(),
+      routes: {
+        '/profile_page': (context) => const ProfilePage(),
+        '/about_page': (context) => const AboutPage(),
+        '/intro_page': (context) => const IntroPage(),
+      },
     );
   }
 }

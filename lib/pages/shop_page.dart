@@ -82,9 +82,10 @@ class ShopPage extends StatelessWidget {
             itemBuilder: (context, index) {
               Shoe shoe = Shoe(
                   name: "New Shoe",
-                  description: "This is a brand new kick",
+                  description:
+                      "Testing",
                   price: "Rs. 2000",
-                  imagePath: 'lib/assets/images/image1.jpg');
+                  imagePath: 'lib/assets/images/nike_downshifter_12.png');
               return ShoeTile(shoe: shoe);
             },
           ),

@@ -20,14 +20,13 @@ class ShoeTile extends StatelessWidget {
           Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20),
+                padding: const EdgeInsets.symmetric(vertical: 40),
                 child: Image.asset(
                   shoe.imagePath,
-                  height: 200,
-                  fit: BoxFit.cover,
                 ),
               ),
               Text(
+                textAlign: TextAlign.center,
                 shoe.description,
                 style: const TextStyle(fontSize: 15),
               ),
